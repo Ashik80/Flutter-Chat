@@ -35,48 +35,95 @@ final User steven =
 //Favorite contacts
 List<User> favorites = [sam, steven, olivia, john, greg];
 
-//Chats on home screen
+//Chats on chat screen
 List<Message> messages = [
   Message(
+      sender: james,
+      time: "5:30 PM",
+      text: "Tore maira ami ghumamu! Amar ghum hoy na",
+      isLiked: false,
+      unread: true),
+  Message(
+      sender: currentUser,
+      time: "4:30 PM",
+      text: "Tor may ghumay",
+      isLiked: false,
+      unread: true),
+  Message(
+      sender: james,
+      time: "3:45 PM",
+      text: "Tui ay! Ricksha vara lagle ami dimu",
+      isLiked: true,
+      unread: true),
+  Message(
+      sender: james,
+      time: "3:15 PM",
+      text: "Aitasi aitasi ami 5 minute er moddhe aitasi!",
+      isLiked: false,
+      unread: true),
+  Message(
+      sender: currentUser,
+      time: "2:30 PM",
+      text: "Amar ato vallage kan?",
+      isLiked: true,
+      unread: true),
+  Message(
+      sender: james,
+      time: "2:00 PM",
+      text: "Amar rokto gorom",
+      isLiked: false,
+      unread: true),
+];
+
+//chats on home screen
+List<Message> chats = [
+  Message(
     sender: james,
-    time: "5:30 PM",
-    text: "Tore maira ami ghumamu! Amar ghum hoy na",
+    time: '5:30 PM',
+    text: 'Tore maira ami ghumamu! Amar ghum hoy na',
     isLiked: false,
-    unread: true
+    unread: true,
   ),
   Message(
-    sender: currentUser,
-    time: "4:30 PM",
-    text: "Tor may ghumay",
+    sender: olivia,
+    time: '4:30 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
-    unread: true
+    unread: true,
   ),
   Message(
-    sender: james,
-    time: "3:45 PM",
-    text: "Tui ay! Ricksha vara lagle ami dimu",
-    isLiked: true,
-    unread: true
-  ),
-  Message(
-    sender: james,
-    time: "3:15 PM",
-    text: "Aitasi aitasi ami 5 minute er moddhe aitasi!",
+    sender: john,
+    time: '3:30 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
-    unread: true
+    unread: false,
   ),
   Message(
-    sender: currentUser,
-    time: "2:30 PM",
-    text: "Amar ato vallage kan?",
-    isLiked: true,
-    unread: true
-  ),
-  Message(
-    sender: james,
-    time: "2:00 PM",
-    text: "Amar rokto gorom",
+    sender: sophia,
+    time: '2:30 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
-    unread: true
+    unread: true,
+  ),
+  Message(
+    sender: steven,
+    time: '1:30 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
+    isLiked: false,
+    unread: false,
+  ),
+  Message(
+    sender: sam,
+    time: '12:30 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
+    isLiked: false,
+    unread: false,
+  ),
+  Message(
+    sender: greg,
+    time: '11:30 AM',
+    text: 'Hey, how\'s it going? What did you do today?',
+    isLiked: false,
+    unread: false,
   ),
 ];
