@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:message_app/models/message_model.dart';
+import 'package:message_app/screens/chat_screen.dart';
 
 import '../models/message_model.dart';
 
@@ -39,20 +40,34 @@ class FavoriteContacts extends StatelessWidget {
               padding: EdgeInsets.only(left: 10),
               itemCount: favorites.length,
               itemBuilder: (BuildContext context, int i) {
-                return Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 35,
-                        backgroundImage: AssetImage(favorites[i].imageUrl),
-                      ),
-                      SizedBox(height: 6,),
-                      Text(
-                        favorites[i].name,
-                        style: TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.w600, fontSize: 16),
-                      ),
-                    ],
+                return GestureDetector(
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => ChatScreen(
+                          user: favorites[i],
+                        ),
+                      )),
+                  child: Padding(
+                    padding: EdgeInsets.all(10.0),
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 35,
+                          backgroundImage: AssetImage(favorites[i].imageUrl),
+                        ),
+                        SizedBox(
+                          height: 6,
+                        ),
+                        Text(
+                          favorites[i].name,
+                          style: TextStyle(
+                              color: Colors.blueGrey,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16),
+                        ),
+                      ],
+                    ),
                   ),
                 );
               },

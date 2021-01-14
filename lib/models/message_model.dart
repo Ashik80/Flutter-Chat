@@ -38,11 +38,19 @@ List<User> favorites = [sam, steven, olivia, john, greg];
 //Chats on chat screen
 List<Message> messages = [
   Message(
-      sender: james,
-      time: "5:30 PM",
-      text: "Tore maira ami ghumamu! Amar ghum hoy na",
-      isLiked: false,
-      unread: true),
+    sender: james,
+    time: "5:30 PM",
+    text: "Tore maira ami ghumamu! Amar ghum hoy na",
+    isLiked: false,
+    unread: true,
+  ),
+  Message(
+    sender: currentUser,
+    time: '4:31 PM',
+    text: 'Chop',
+    isLiked: false,
+    unread: true,
+  ),
   Message(
       sender: currentUser,
       time: "4:30 PM",
@@ -68,11 +76,12 @@ List<Message> messages = [
       isLiked: true,
       unread: true),
   Message(
-      sender: james,
-      time: "2:00 PM",
-      text: "Amar rokto gorom",
-      isLiked: false,
-      unread: true),
+    sender: james,
+    time: "2:00 PM",
+    text: "Amar rokto gorom",
+    isLiked: false,
+    unread: true,
+  ),
 ];
 
 //chats on home screen
